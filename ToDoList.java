@@ -7,13 +7,14 @@ public class ToDoList {
         ArrayList<String> tasks = new ArrayList<>();
 
         System.out.println("Welcome to the To-Do List App!");
-
+        //conditional flag
         while (true) {
             System.out.println("\n1. Add Task\n2. View Tasks\n3. Mark Task as Completed\n4. Exit");
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
+            //swtich case for selcection base
             switch (choice) {
                 case 1:
                     System.out.print("Enter the task: ");
@@ -46,6 +47,7 @@ public class ToDoList {
                     }
                     break;
                 case 4:
+                    //conclusive statement
                     System.out.println("Thank you for using the To-Do List App. Goodbye!");
                     scanner.close();
                     System.exit(0);
