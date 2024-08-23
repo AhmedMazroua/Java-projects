@@ -13,7 +13,7 @@ public static void accessDash(String User) {
    /*Initialized values (normally I would have them all
     lower case or upper case for ease of comparision
     utilizing built in .toLowerCase() or .toUpperCase()
-    methods
+    methods, but for simplicity's sake
     */
 String userType1 = "Admin";
 String userType2 = "Teacher";
