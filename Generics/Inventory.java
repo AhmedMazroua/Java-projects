@@ -7,7 +7,7 @@ public class Inventory<T extends Vehicle> {
     ArrayList<T> inventory;
 
 
-    public Inventory(ArrayList<T> inventory) {
+    public Inventory() {
         this.inventory = inventory;
     }
 
@@ -27,13 +27,10 @@ public class Inventory<T extends Vehicle> {
 
     public void removeFromInventory(String vin){
         Iterator<T> iterator = inventory.iterator();
-        boolean removed = false;
-
         while (iterator.hasNext()) {
             T vehicle = iterator.next();
             if (vehicle.getVin().equals(vin)) {
-                iterator.remove();  // Safely remove the matching vehicle
-                removed = true;
+                iterator.remove();
                 System.out.println("Removed: " + vehicle + " " + "from inventory");
             }
         }
